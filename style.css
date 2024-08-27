@@ -2,6 +2,24 @@
   padding-top: 2rem;
   background-color: #bababa;
 }
-th, td {
+th,
+td {
   padding: 15px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparan dark */
+  color: white;
+  border: none;
+  z-index: 1000;
+  display: none; /* Hide by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.back-to-top.show {
+  display: inline-block; /* Show when scrolled down */
+  opacity: 1;
 }
