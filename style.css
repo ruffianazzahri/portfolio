@@ -135,6 +135,11 @@ td {
   transition: color 0.3s ease-in-out;
 }
 
+.navbar-toggler-icon {
+  filter: invert(46%) sepia(99%) saturate(292%) hue-rotate(72deg)
+    brightness(106%) contrast(105%);
+}
+
 a {
   color: #00b2ff;
 }
@@ -292,7 +297,8 @@ h5 {
 
 p,
 span,
-a {
+a,
+table {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
