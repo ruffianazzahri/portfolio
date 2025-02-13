@@ -304,6 +304,10 @@ table {
   font-style: normal;
 }
 
+body {
+  overflow: hidden;
+}
+
 .welcome-overlay {
   position: fixed;
   top: 0;
