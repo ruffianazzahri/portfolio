@@ -25,7 +25,7 @@
     <title>Portfolio - Muhammad Ruffian Azzahri</title>
 </head>
 
-
+<div class="welcome-overlay">Welcome to My Portfolio</div>
 <body class="d-flex flex-column min-vh-100" data-bs-spy="scroll" data-bs-target="#navbarNav">
 <!-- Navbar -->
 <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fixed-top">
@@ -52,6 +52,8 @@
     <a href="#home" class="btn btn-dark btn-lg back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
+
+
 
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <div class="jumbotron w-100" id="home">
@@ -561,6 +563,12 @@
         ease: "power1.inOut"
     });
     </script>
+        <script>
+            setTimeout(() => {
+                document.querySelector('.welcome-overlay').remove();
+                document.body.style.overflow = "auto";
+            }, 4500);
+        </script>
     
 
 </body>
